@@ -1,9 +1,7 @@
-package com.br.cosmolustosa.entities;
+package br.com.cosmolustosa.entities;
 
-public class ContaPoupanca extends Conta{
-
-
-    public ContaPoupanca(Cliente c) {
+public class ContaCorrente extends Conta{
+    public ContaCorrente(Cliente c) {
         super(c);
     }
 
@@ -24,11 +22,13 @@ public class ContaPoupanca extends Conta{
     public void transferir(double valor, Conta contaDestino) {
         this.sacar(valor);
         contaDestino.depositar(valor);
+
     }
 
     @Override
     public void imprimirExtrato() {
-        System.out.println("**** Tipo: Conta Poupança\n" +
+        System.out.println("**** Tipo: Conta Corrente *****\n" +
+                "Titular: " + this.getCliente().toString() + "\n" +
                 "Saldo: "+ this.getSaldo() + "\n" +
                 "");
 

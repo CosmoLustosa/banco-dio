@@ -1,4 +1,4 @@
-package com.br.cosmolustosa.entities;
+package br.com.cosmolustosa.entities;
 
 public abstract class Conta implements IConta{
     private static int AGENCIA_PADRAO = 1;
@@ -21,5 +21,17 @@ public abstract class Conta implements IConta{
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }

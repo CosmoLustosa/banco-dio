@@ -1,4 +1,4 @@
-package com.br.cosmolustosa.entities;
+package br.com.cosmolustosa.entities;
 
 public interface IConta {
     void sacar(double valor);

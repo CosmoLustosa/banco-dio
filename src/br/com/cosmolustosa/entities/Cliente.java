@@ -1,4 +1,4 @@
-package com.br.cosmolustosa.entities;
+package br.com.cosmolustosa.entities;
 
 public class Cliente {
     private String nome;
